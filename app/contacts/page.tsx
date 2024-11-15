@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import React from 'react'
 
 import {FaPhoneAlt} from 'react-icons/fa'
