@@ -1,33 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  @layer base{
+    body{
+      @apply font-primary bg-gray-900 text-white leading-loose;
+    }
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+
+  .border-dashed-custom {
+    border-style: dashed;
+    border-width: 1.3px;
+    border-color: var(--tw-border-opacity) currentColor;
+    border-radius: 9999px;
+    animation: rotateBorder 4s linear infinite;
+    border-spacing: 5px; /* Adjust this value to space out the dashes */
   }
-}
+  
+  .border-dashed-custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: inherit;
+    border-width: 1.3px;
+    border-color: inherit;
+    border-style: inherit;
+    border-radius: inherit;
+    border-spacing: 5px;
+    border-image: linear-gradient(to right, currentColor 50%, transparent 0);
+    border-image-slice: 1;
+    border-image-width: 1.3px 1.3px 1.3px 1.3px;
+    border-image-outset: 0;
+    border-image-repeat: round;
+  }
