@@ -142,7 +142,7 @@ export const projects = [
     },
 
     {
-        num: '05',
+        num: '06',
         type: "Full-Stack",
         title: "Casino Web3",
         description: "A web3 Dapp's Platform for playing casino spin of wheel game, it has a challanger mode and the basic wheel mode. using sol for stacking.",

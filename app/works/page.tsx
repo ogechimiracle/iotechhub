@@ -101,7 +101,7 @@ function Works() {
                   <div></div>
 
                   <div className="relative h-full w-full rounded-md">
-                    <Image src={project.image} fill className="object-cover" alt=""/>
+                    <Image src={project.image} fill className="object-cover" alt="images"/>
                   </div>
                 </div>
               </SwiperSlide>
