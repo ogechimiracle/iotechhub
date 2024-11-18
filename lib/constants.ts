@@ -103,7 +103,7 @@ export const projects = [
         title: "Smartgenix",
         description: "An online auto mobile paltform for connecting mechanic and cars owners",
         stack: ["Laravel", "PHP", "Tailwindcss", "MySQL", "Stripe"],
-        image: '/works/smartgenix.png',
+        image: '/works/smartgenix.PNG',
         live: '',
         github: ''
     },
@@ -147,7 +147,7 @@ export const projects = [
         title: "Casino Web3",
         description: "A web3 Dapp's Platform for playing casino spin of wheel game, it has a challanger mode and the basic wheel mode. using sol for stacking.",
         stack: ["NextJs", "Tailwindcss", "TypeScript", "Solana", "MongoDB", "NodeJS", "ExpressJS"],
-        image: '/works/solgacy.png',
+        image: '/works/solgacy.PNG',
         live: '',
         github: ''
     },
